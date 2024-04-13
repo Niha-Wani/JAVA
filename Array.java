@@ -19,13 +19,11 @@ public class Array {
 			System.out.println(ar[i]);
 	
 		}
-		System.out.println("our array is after incrementing each element by 1 ");
+		System.out.println("our array  after incrementing each element by 1 ");
 		for(int i=0;i<size;i++)
 		{
 			System.out.println(ar[i]+1);
 	
 		}
-
 	}
-
 }
