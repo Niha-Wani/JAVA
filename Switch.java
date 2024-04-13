@@ -12,24 +12,24 @@ public class Switch
 		case 1:
 		case 2:
 		case 3:
-		System.out.println("Spring season");
+		System.out.println("Spring Season");
 		break;
 		case 4:
 		case 5:
     	        case 6:
-		System.out.println("Summer season");
+		System.out.println("Summer Season");
 		break;
 		case 7:
 		case 8:
 		case 9:
-		System.out.println("Autumn season");
+		System.out.println("Autumn Season");
 		break;
 		case 10:
 		case 11:
 		case 12:
-		System.out.println("Winter season");
+		System.out.println("Winter Season");
 	        break;
-	        default:System.out.println("Invalid number");
+	        default:System.out.println("Invalid Number");
 		}
 	}
 }
