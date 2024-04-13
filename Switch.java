@@ -1,7 +1,9 @@
 package javaprograms;
 import java.util.Scanner;
-public class Switch {
-	public static void main(String[] args) {
+public class Switch 
+{
+	public static void main(String[] args)
+	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the month number");
 		int x=sc.nextInt();
@@ -14,7 +16,7 @@ public class Switch {
 		break;
 		case 4:
 		case 5:
-    	case 6:
+    	        case 6:
 		System.out.println("Summer season");
 		break;
 		case 7:
@@ -26,8 +28,8 @@ public class Switch {
 		case 11:
 		case 12:
 		System.out.println("Winter season");
-	    break;
-	    default:System.out.println("Invalid number");
+	        break;
+	        default:System.out.println("Invalid number");
 		}
 	}
 }
