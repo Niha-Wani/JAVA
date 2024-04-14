@@ -24,7 +24,7 @@ public class Matrixmul
 			{
 				System.out.print(ar[i][j]+ " ");
 				if(j==c-1)
-					System.out.println(" ");
+				System.out.println(" ");
 			}
 		}
 		System.out.println("Enter row size and column size");
@@ -46,32 +46,29 @@ public class Matrixmul
 			{
 				System.out.print(ar2[i][j]+ " ");
 				if(j==c2-1)
-					System.out.println(" ");
+				System.out.println(" ");
 			}
 		}
 		System.out.println("Matrix multiplication is");
 		{
-			
 			int mat3[][]=new int[r][c2];
 			for(int i=0;i<r;i++)
 			{
 				for(int j=0;j<c2;j++)
 				{
-					
-					for(int k=0;k<c;k++)
-					{
+				     for(int k=0;k<c;k++)
+				     {
 					mat3[i][j]+=ar[j][j]*ar2[k][j];
-					}
+				     }
 				}
-		}
-			
+		        }	
 			for(int i=0;i<r;i++)
 			{
-				for(int j=0;j<c2;j++)
-				{
-					System.out.println(mat3[i][j]);			
-					}
-}
+			    for(int j=0;j<c2;j++)
+			     {
+			      System.out.println(mat3[i][j]);			
+		             }
+                        }
 		}
 }
 }
