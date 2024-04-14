@@ -17,7 +17,7 @@ public class Matrixmul
 				ar[i][j]=s.nextInt();
 			}
 		}
-		System.out.println("our matrix is");
+		System.out.println("our matrix is ");
 		for(int i=0;i<r;i++)
 		{
 			for(int j=0;j<c;j++)
@@ -31,7 +31,7 @@ public class Matrixmul
 		int r2=s.nextInt();
 		int c2=s.nextInt();
 		int ar2[][]=new int[r2][c2];
-		System.out.println("Enter matrices elements");
+		System.out.println("Enter matrices elements ");
 		for(int i=0;i<r2;i++)
 		{
 			for(int j=0;j<c2;j++)
@@ -70,5 +70,5 @@ public class Matrixmul
 		             }
                         }
 		}
-}
+    }
 }
