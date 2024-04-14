@@ -1,8 +1,9 @@
 package javaprograms;
 import java.util.Scanner;
-public class Matrixadd {
-
-	public static void main(String[] args) {
+public class Matrixadd 
+{
+	public static void main(String[] args)
+	{
 		Scanner s=new Scanner(System.in);
 		System.out.println("enter row size and column size");
 		int r=s.nextInt();
@@ -57,10 +58,5 @@ public class Matrixadd {
 				System.out.println(ar2[i][j]+ar[i][j]);
 			}
 		}
-		
-		
-
 	}
-
 }
-
