@@ -5,11 +5,11 @@ public class Matrixadd
 	public static void main(String[] args)
 	{
 		Scanner s=new Scanner(System.in);
-		System.out.println("enter row size and column size");
+		System.out.println("Enter row size and column size");
 		int r=s.nextInt();
 		int c=s.nextInt();
 		int ar[][]=new int[r][c];
-		System.out.println("enter matrices elements");
+		System.out.println("Enter matrices elements");
 		for(int i=0;i<r;i++)
 		{
 			for(int j=0;j<c;j++)
