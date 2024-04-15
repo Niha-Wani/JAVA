@@ -10,5 +10,5 @@ class addition
         int y=s.nextInt();
         int sum=x+y;
         System.out.println("Sum is:"+sum);
-    };
-};
+    }
+}
