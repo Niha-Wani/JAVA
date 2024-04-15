@@ -9,6 +9,6 @@ class addition
         System.out.println("Enter value of b:");
         int y=s.nextInt();
         int sum=x+y;
-        System.out.println("Sum is:"+sum);
+        System.out.println("Sum is: "+sum);
     }
 }
