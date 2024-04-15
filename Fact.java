@@ -1,12 +1,12 @@
 package javaprograms;
 import java.util.*;
- public class Fact
-	{
+public class Fact
+{
 	static int fact;
-    static int factorial(int num)
+        static int factorial(int num)
 {
     	if(num==1)
-    		return 1;
+    	return 1;
     	else
 	return fact=num*factorial(num-1);
 }	
@@ -18,4 +18,4 @@ import java.util.*;
 	int facto=factorial(n);
 	System.out.println("Factorial of : " +n+ " is: "+facto);
 	}
-	}
+}
