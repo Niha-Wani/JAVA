@@ -4,8 +4,9 @@ class Ifelse
 {
   public static void main(String[] args)
   {
-      int n;
-    System.out.println("Enter the number ");
+      Scanner s=new Scanner(System.in);
+      System.out.println("Enter the number ");
+      int n=s.
       if(n%2== 0)
       {
       System.out.println("The number is even.");
