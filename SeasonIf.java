@@ -17,6 +17,6 @@ class SeasonIf
         season = "Autumn";
         else
         season = "Bogus Month";
-        System.out.println(" entered month is in the " + season + ".");
+        System.out.println(" Entered month is in the " +season );
     } 
 }
