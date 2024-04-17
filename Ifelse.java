@@ -1,3 +1,5 @@
+package javaprograms;
+import java.util.Scanner;
 class Ifelse
 {
   public static void main(String[] args)
