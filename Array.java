@@ -1,6 +1,7 @@
 package javaprograms;
 import java.util.Scanner;
-public class Array {
+public class Array 
+{
 	public static void main(String[] args)
 	{
 		Scanner s=new Scanner(System.in);
