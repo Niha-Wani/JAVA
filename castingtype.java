@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class conversion
 {
     public staic void main(string args[])
