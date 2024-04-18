@@ -1,4 +1,5 @@
-
+package javaprograms;
+import java.util.Scanner;
 class Casting
 {
 public static void main(String args[])
