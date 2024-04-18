@@ -7,7 +7,7 @@ int i=160;
 double d=323.142;
 System.out.println("conversion of int to byte");
 b=(byte)i;
-System.out.println("value of i \n"+i );
+System.out.println("value of i \n" +i );
 System.out.println("value of  b\n" +b);
 System.out.println("conversion of int to double");
 d=i;
