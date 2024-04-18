@@ -1,6 +1,7 @@
 class conversion
 {
     public staic void main(string args[])
+    {
     byte b;
     int i=257;
     double d=323142;
@@ -14,4 +15,5 @@ class conversion
     System.out.println("d and i"+d,+i);
     d=(byte);
     System.out.println("conversion of double to byte");
+   }
 }
