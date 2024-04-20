@@ -1,56 +1,45 @@
+package javaprograms;
 import java.util.*;
-class Queue
-{
+class Queue{
 	int ar[]=new int[10];
 	int front=-1;
 	int rear=-1;
-	void insert(int val) 
-	{
-		if(rear==9)
-		{
+	void insert(int val) {
+		if(rear==9) {
 			System.out.println("Queue is full");
 		}
-		else if(front==-1)
-		{
+		else if(front==-1) {
 			front++;
 			rear++;
 			ar[rear]=val;
 		}
-		else 
-		{
+		else {
 			rear++;
 			ar[rear]=val;
 		}
 	}
-	int deletion()
-	{
+	int deletion() {
 		int x=0;
 		if(front==-1 || front>rear)
 			System.out.println("Queue is empty");
-		else
-		{
+		else {
 			 x=ar[front];
 			front++;
 		}
 			return x;
 	}
-	void display() 
-	{
+	void display() {
 		if(front==-1 || front>rear)
 		System.out.println("Queue is empty");
-		else 
-		{
-			for(int i=front;i<=rear;i++) 
-			{
+		else {
+			for(int i=front;i<=rear;i++) {
 				System.out.print( " "+ar[i]);
 			}
 		}
 	}
 }
-public class Queuemain 
-{
-public static void main(String args[]) 
-	{
+public class Queuemain {
+public static void main(String args[]) {
 	Queue obj=new Queue();
 	Scanner sc=new Scanner(System.in);
 	System.out.println("Enter the element");
@@ -93,5 +82,6 @@ public static void main(String args[])
 	System.out.println("The deleted element is " +f);
 	obj.display();
 	
-  }
 }
+}
+
