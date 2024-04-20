@@ -93,5 +93,5 @@ public static void main(String args[])
 	int f=obj.deletion();
 	System.out.println("The deleted element is " +f);
 	obj.display();	
-}
+  }
 }
