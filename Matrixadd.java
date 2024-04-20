@@ -1,15 +1,14 @@
 package javaprograms;
 import java.util.Scanner;
-public class Matrixadd 
-{
-	public static void main(String[] args)
-	{
+public class Matrixadd {
+
+	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		System.out.println("Enter row size and column size");
+		System.out.println("enter row size and column size");
 		int r=s.nextInt();
 		int c=s.nextInt();
 		int ar[][]=new int[r][c];
-		System.out.println("Enter matrices elements");
+		System.out.println("enter matrices elements");
 		for(int i=0;i<r;i++)
 		{
 			for(int j=0;j<c;j++)
@@ -24,7 +23,7 @@ public class Matrixadd
 			{
 				System.out.print(ar[i][j]+ " ");
 				if(j==c-1)
-				System.out.println(" ");
+					System.out.println(" ");
 			}
 		}
 		System.out.println("enter row size and column size");
@@ -46,9 +45,10 @@ public class Matrixadd
 			{
 				System.out.print(ar2[i][j]+ " ");
 				if(j==c2-1)
-				System.out.println(" ");
+					System.out.println(" ");
 			}
 		}
+		
 		System.out.println("addition of two matrices is");
 		for(int i=0;i<r2;i++)
 		{
@@ -57,5 +57,10 @@ public class Matrixadd
 				System.out.println(ar2[i][j]+ar[i][j]);
 			}
 		}
+		
+		
+
 	}
+
 }
+
