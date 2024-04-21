@@ -24,7 +24,7 @@ public class Matrixadd
 			{
 				System.out.print(ar[i][j]+ " ");
 				if(j==c-1)
-				  System.out.println(" ");
+				System.out.println(" ");
 			}
 		}
 		System.out.println("enter row size and column size");
@@ -46,7 +46,7 @@ public class Matrixadd
 			{
 				System.out.print(ar2[i][j]+ " ");
 				if(j==c2-1)
-				 System.out.println(" ");
+				System.out.println(" ");
 			}
 		}
 		System.out.println("addition of two matrices is");
