@@ -1,7 +1,9 @@
 package javaprograms;
 import java.util.*;
-public class Matricesequivalent {
-	public static void main(String[] args) {
+public class Matricesequivalent 
+{
+	public static void main(String[] args)
+	{
 		boolean equal=true;
 		Scanner s=new Scanner(System.in);
 		System.out.println("enter row size and column size");
@@ -23,7 +25,7 @@ public class Matricesequivalent {
 			{
 				System.out.print(ar[i][j]+ " ");
 				if(j==c-1)
-					System.out.println(" ");
+				System.out.println(" ");
 			}
 		}
 		System.out.println("enter row size and column size");
@@ -45,20 +47,21 @@ public class Matricesequivalent {
 			{
 				System.out.print(ar2[i][j]+ " ");
 				if(j==c2-1)
-					System.out.println(" ");
+				System.out.println(" ");
 			}
 		}
 		for(int i=0;i<r;i++)
 		{
-		for(int j=0;j<c;j++) {
+		    for(int j=0;j<c;j++)
+		    {
 			if(ar[i][j]!=ar2[i][j])
-				equal=false;
-			    break;
-		}
-}
+			equal=false;
+			break;
+		     }
+                 }
 		if(equal==false) 
-			System.out.println("Matrices are not equal");
-			else
-				System.out.println("Matrices are equal");
+		System.out.println("Matrices are not equal");
+		else
+		System.out.println("Matrices are equal");
 		}
 	}
