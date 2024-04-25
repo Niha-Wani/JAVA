@@ -1,7 +1,9 @@
 package javaprograms;
 import java.util.*;
-public class Sortarraycolumn {
-	public static void main(String[] args) {
+public class Sortarraycolumn 
+{
+	public static void main(String[] args) 
+	{
 		Scanner s=new Scanner(System.in);
 		System.out.println("enter row size and column size");
 		int r=s.nextInt();
@@ -25,18 +27,18 @@ public class Sortarraycolumn {
 					System.out.println(" ");
 			}
 		}
-		for(int i=0;i<c-1;i++)
-		{
+	   for(int i=0;i<c-1;i++)
+	   {
 		for(int j=0;j<r-i-1;j++)
-		{
-		if(ar[i][j]>ar[i+1][j])
-		{
-		int temp=ar[i][j];
-		ar[i][j]=ar[i+1][j];
-		ar[i+1][j]=temp;
-		}
-		}
-		}
+		 {
+		   if(ar[i][j]>ar[i+1][j])
+		    {
+		      int temp=ar[i][j];
+		      ar[i][j]=ar[i+1][j];
+        	      ar[i+1][j]=temp;
+		     }
+		  }
+	     }
 		System.out.println("our sorted 2D array is");
 		for(int i=0;i<r;i++)
 		{
@@ -44,9 +46,8 @@ public class Sortarraycolumn {
 			{
 				System.out.print(ar[i][j]+ " ");
 				if(j==c-1)
-					System.out.println(" ");
+				System.out.println(" ");
 			}
 		}
 }
 }
-
