@@ -85,6 +85,6 @@ public class Inheritance
     {
 	//Shipment obj1=new Shipment(10,20,30,40,50);
 	Shipment obj2=new Shipment(5,2,3,8,10);
-	System.out.println("volume of box1 is " +obj2.volume());
+	System.out.println(" volume of box1 is " +obj2.volume());
     }
 }
