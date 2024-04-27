@@ -1,13 +1,18 @@
 package javaprograms;
-class Queue{
+class Queue
+{
 	boolean flag=false;
 	int n;
-	synchronized void put(int n) {
-		while(flag) {
-			try {
+	synchronized void put(int n) 
+	{
+		while(flag)
+			{
+			try
+			{
 				wait();
 			}
-			catch(InterruptedException e) {
+			catch(InterruptedException e) 
+				{
 				System.out.println(e);
 			}
 			this.n=n;
@@ -16,12 +21,16 @@ class Queue{
 			notify();
 		}
 	}
-	synchronized int get() {
-		while(!flag) {
-			try {
+	synchronized int get() 
+	{
+		while(!flag) 
+		{
+			try 
+				{
 				wait();
 			}
-			catch(InterruptedException e) {
+			catch(InterruptedException e)
+				{
 				System.out.println(e);
 			}
 			System.out.println("Got:"+n);
@@ -31,35 +40,45 @@ class Queue{
 		}
 	}
 }
-class Producer implements Runnable{
+class Producer implements Runnable
+{
 	Thread t;
 	Queue q;
-	Producer(Queue q){
+	Producer(Queue q)
+	{
 		this.q=q;
 		new Thread(this,"Producer").start();
 	}
-	public void run() {
+	public void run() 
+	{
 		int i=0;
-		while(true) {
+		while(true)
+			{
 			q.put(i+1);
 		}
 	}
 }
-class Consumer implements Runnable{
+class Consumer implements Runnable
+{
 	Thread t;
 	Queue q;
-	Consumer(Queue q){
+	Consumer(Queue q)
+	{
 		this.q=q;
 		new Thread(this,"Consumer").start();
 	}
-	public void run() {
-		while(true) {
+	public void run()
+	{
+		while(true)
+			{
 			q.get();
 		}
 	}
 }
-public class ProducerConsumer {
-public static void main(String args[]) {
+public class ProducerConsumer 
+{
+public static void main(String args[]) 
+	{
 	Queue q=new Queue();
 	new Producer(q);
 	new Consumer(q);
