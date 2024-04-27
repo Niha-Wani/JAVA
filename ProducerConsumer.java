@@ -5,39 +5,39 @@ class Queue
 	int n;
 	synchronized void put(int n) 
 	{
-		while(flag)
-			{
-			try
-			{
-				wait();
-			}
+	    while(flag)
+	    {
+	        try
+		{
+	           wait();
+		}
 			catch(InterruptedException e) 
-				{
-				System.out.println(e);
+			{
+			   System.out.println(e);
 			}
 			this.n=n;
 			flag=true;
 			System.out.println("put:"+n);
 			notify();
-		}
+	    }
 	}
 	synchronized int get() 
 	{
-		while(!flag) 
-		{
-			try 
-				{
-				wait();
-			}
-			catch(InterruptedException e)
-				{
-				System.out.println(e);
-			}
-			System.out.println("Got:"+n);
-			flag=false;
-			notify();
-			return n;
-		}
+	     while(!flag) 
+	     {
+		  try 
+		  {
+			wait();
+		   }
+	          catch(InterruptedException e)
+		   {
+			System.out.println(e);
+		   }
+		System.out.println("Got:"+n);
+		flag=false;
+		notify();
+		return n;
+	      }
 	}
 }
 class Producer implements Runnable
@@ -51,13 +51,13 @@ class Producer implements Runnable
 	}
 	public void run() 
 	{
-		int i=0;
-		while(true)
-			{
-			q.put(i+1);
-		}
+	    int i=0;
+	    while(true)
+	    {
+		q.put(i+1);
+	     }
 	}
-}
+  }
 class Consumer implements Runnable
 {
 	Thread t;
@@ -69,19 +69,19 @@ class Consumer implements Runnable
 	}
 	public void run()
 	{
-		while(true)
-			{
-			q.get();
-		}
+	     while(true)
+	     {
+		q.get();
+	     }
 	}
 }
 public class ProducerConsumer 
 {
-public static void main(String args[]) 
-	{
+    public static void main(String args[]) 
+    {
 	Queue q=new Queue();
 	new Producer(q);
 	new Consumer(q);
 	System.out.println("Press control c to exit ");
-}
+    }
 }
