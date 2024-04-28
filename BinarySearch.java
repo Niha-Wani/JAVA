@@ -25,8 +25,8 @@ public class BinarySearch
 	    end=n-1;
 	    while(start<=end) 
 	    {
-		mid=start+end/2;
-		if(key==a[mid]) 
+		  mid=start+end/2;
+		  if(key==a[mid]) 
 		  {
 			flag=true;
 			p=mid;
