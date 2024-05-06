@@ -15,13 +15,13 @@ public class Recursion
 	}
 	System.out.println("The elements are ");
 	display(arr,0);
-      }
+     }
       public static void display(int arr[],int index) 
       {
-	if(index==arr.length) 
-	{
+	 if(index==arr.length) 
+	 {
 	    return;
-        }
+         }
 	System.out.print(arr[index]);
 	display(arr,index+1);
       }
