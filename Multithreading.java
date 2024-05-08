@@ -10,35 +10,35 @@ class Newthread implements Runnable
         }
 	public void run() 
 	{
-		try 
-		{
-		  for(int i=0;i<10;i++) 
-		  {
+	     try 
+	     {
+		 for(int i=0;i<10;i++) 
+		 {
 		    System.out.println(t+i);
 		    Thread.sleep(1000);
-		  }
-		}
-		catch(InterruptedException e)
-		{
-		   System.out.println(e);
-		}
+		 }
+	      }
+	      catch(InterruptedException e)
+	      {
+		 System.out.println(e);
+	      }
 	}
 }
 public class Multithreading
 {
-  public static void main(String args[])
-  {
-    new Newthread();
-      try
-      {
+    public static void main(String args[])
+    {
+        new Newthread();
+        try
+        {
 	   for(int i=0;i<10;i++) 
 	   {
 		System.out.println("value of i="+i);
 		Thread.sleep(1000);
 	   }
-      }
-      catch(InterruptedException e) 
-	{
+         }
+       catch(InterruptedException e) 
+       {
 	  System.out.println(e);
 	}
 	System.out.println("Mainthread exiting");
