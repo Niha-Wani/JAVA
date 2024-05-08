@@ -2,7 +2,7 @@ package javaprograms;
 import java.util.*;
 public class Foreach 
 {
-public static void main(String args[]) 
+        public static void main(String args[]) 
 	{
 	int n;
 	Scanner sc=new Scanner(System.in);
