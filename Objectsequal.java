@@ -10,10 +10,10 @@ class Testt
 	}
 	boolean equal(Testt obj) 
 	{
-		if(obj.a==a && obj.b==b)
-		   return true;
-		else
-		   return false;
+	    if(obj.a==a && obj.b==b)
+	       return true;
+	    else
+	       return false;
 	}
 }
 public class Objectsequal 
